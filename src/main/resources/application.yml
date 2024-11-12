@@ -1,4 +1,10 @@
 server:
- port: 8081
+ port: 8083
 agency:
- updates-allowed: false
+ updates-allowed: true
+
+spring:
+ security:
+  user:
+    name: admin
+    password: admin123
