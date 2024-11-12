@@ -1,9 +1,19 @@
 package com.example.agencyapi.model;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class Agency {
+    @NotBlank
     private String id;
+
+    @NotBlank
     private String name;
 
+    @NotBlank
+    private String code;
+
+    @NotBlank
+    private String description;
     public String getId() {
         return id;
     }
@@ -36,8 +46,7 @@ public class Agency {
         this.description = description;
     }
 
-    private String code;
-    private String description;
+
 
 
 }
